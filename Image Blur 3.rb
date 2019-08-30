@@ -43,7 +43,6 @@ class Image
   def manhattanDistanceCalculate(point1, point2)
     dif1 = point1[0] - point2[0]
     dif2 = point1[1] - point2[1]
-    # print((point1[0] - point2[0]).abs + (point1[1] - point2[1]).abs)
     dif1.abs + dif2.abs
   end
 
@@ -69,8 +68,6 @@ class Image
         pair = [ii,jj]
         if blurPoint?(pair,blurDistance)
           @img[ii][jj] = 1
-        #else
-          #@img[ii][jj] = 0
         end
       end
     end
